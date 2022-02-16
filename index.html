@@ -23,35 +23,32 @@
 </head>
 
 <body>
-
     <div data-scroll-container>
-
-        <section id="intro" class="h-screen flex items-center justify-center text-center bg-stone-900 text-neutral-200"
-            data-scroll-section>
-            <div class="relative z-30 p-5 text-5xl text-white">
+        <section id="intro" class="h-screen m-auto flex items-center justify-center text-center text-neutral-200 bg-fixed bg-center bg-cover custom-img">
+            <div class="relative z-30 p-5 text-5xl text-white" data-scroll-section>
                 <p>Hello. I'm <span class="txt-rotate" data-period="1500"
                         data-rotate='[ "Tom.", "a dad.", "a coach.", "a nerd.", "the dog walker." , "a developer.", "always learning."]'></span>
                 </p>
             </div>
         </section>
-        <section class="py-40 z-40" data-scroll-section>
+        <section id="nav-section" class="py-40 bg-neutral-900" data-scroll-section>
             <div class="container px-5 mx-auto">
                 <nav>
                     <ul class="grid md:grid-flow-col gap-8 lg:gap-16 justify-center text-center">
                         <li>
-                            <a class="inline-block font-medium text-2xl px-4 py-2 border-4 border-double border-transparent text-stone-900 transition"
+                            <a class="inline-block font-medium text-2xl px-4 py-2 border-4 border-double border-transparent text-stone-50 transition"
                                 href="#about-section" data-scroll-to>
                                 About
                             </a>
                         </li>
                         <li>
-                            <a class="inline-block text-2xl font-medium px-4 py-2 border-4 border-double border-transparent text-stone-900 transition"
+                            <a class="inline-block text-2xl font-medium px-4 py-2 border-4 border-double border-transparent text-stone-50 transition"
                                 href="#experience" data-scroll-to>
                                 Experience
                             </a>
                         </li>
                         <li>
-                            <a class="inline-block text-2xl font-medium px-4 py-2 border-4 border-double border-transparent text-stone-900 transition"
+                            <a class="inline-block text-2xl font-medium px-4 py-2 border-4 border-double border-transparent text-stone-50 transition"
                                 href="#contact" data-scroll-to>
                                 Contact
                             </a>
@@ -180,7 +177,7 @@
             </div>
         </section>
 
-        <section id="contact-section" class="py-40 bg-stone-200 text-neutral-900" data-scroll-section>
+        <section id="contact-section" class="m-auto py-40 text-neutral-900" data-scroll-section>
             <div class="container px-5 mx-auto">
                 <div id="contact" class="lg:grid grid-cols-2 gap-4 items-start">
                     <h2 class="text-5xl font-medium" data-scroll data-scroll-sticky data-scroll-target="#contact">
@@ -195,21 +192,12 @@
             </div>
         </section>
 
-        <section class="h-screen flex items-center justify-center text-center bg-slate-900 text-stone-50"
-            data-scroll-section>
-            <div class="container px-5 mx-auto">
+        <section class="h-screen flex items-center justify-center text-center bg-slate-900 text-stone-50" data-scroll-section>
+            <div class="container px-5 mx-auto ">
                 <p class="text-3xl">TODO: put links to instagram, 500px, linkedin, github here
                 </p>
             </div>
         </section>
-        <a class="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600 transition opacity-0 invisible"
-            href="#intro" role="button" aria-label="Back to top" data-scroll-to>
-            <svg class="fill-current" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                viewBox="0 0 24 24">
-                <path
-                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z" />
-            </svg>
-        </a>
     </div>
 
     <footer class="page-footer">
