@@ -6,7 +6,7 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
   smooth: true,
   tablet: { smooth: true },
-  smartphone: { smooth: false }
+  smartphone: { smooth: true }
 });
 
 var TxtRotate = function(el, toRotate, period) {
